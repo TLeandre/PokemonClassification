@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <div class="title">
+        <img src="images/pokemon.png"/>
+        <h1>Image Classification with TensorFlow.js</h1>
+    </div>
+
+    <div class="container">
+        <div class="left-column">
+            <p>Upload an image to classify:</p>
+            <input type="file" id="imageInput" accept=".jpg">
+            <br>
+            <img id="previewImage" alt="Image preview will appear here" />
+        </div>
+        <div class="right-column">
+            <p id="availableClasses"><strong>Available Pokémon:</strong></p>
+            <div id="classImagesGrid" class="grid-container"></div>
+            <p id="predictions"><strong>Predictions will appear here</strong></p>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

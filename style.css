@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.left-column {
+    text-align: center;
+    border-right: 2px solid #ddd;
+    padding-right: 20px;
+}
+
+.right-column {
+    padding-left: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+.progress-container {
+    width: 70%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+    display: flex;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 0%;
+    transition: width 0.1s ease-in-out;
+}
+
+.prediction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.prediction-image {
+    width: 75px;
+    height: 75px;
+    margin-right: 0px;
+    margin-top: -15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    margin: 10px 0;
+}
+
+.grid-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.grid-container img:hover {
+    transform: scale(1.1);
+    border-color: #ff6600;
+}
