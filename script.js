@@ -64,8 +64,8 @@ async function classifyImage(imgElement) {
 
     const tensor = tf.browser.fromPixels(imgElement)
         .resizeBilinear([177, 177])
-        .toFloat()
-        .div(tf.scalar(255));
+        .toFloat();
+        /*.div(tf.scalar(255));*/
 
     const cropHeight = 128;
     const cropWidth = 128;
